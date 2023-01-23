@@ -10,11 +10,11 @@
 
         <script>
             var clientInfo = {
-                client_id : 'd501879e-4f06-4097-b6d1-1586b995102d',
-                redirect_uri : 'https://www.cyberscores.io/login-callback&prompt=login'
+                client_id : 'myclientID',
+                redirect_uri : 'https://example.com/callback.html'
             };
 
-            var providerInfo = OIDC.discover('https://sdl.secure-activation.com');
+            var providerInfo = OIDC.discover('https://(hostname)');
             OIDC.setClientInfo( clientInfo );
             OIDC.setProviderInfo( providerInfo );
             OIDC.storeInfo(providerInfo, clientInfo);
